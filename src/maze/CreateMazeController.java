@@ -7,6 +7,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
+import maze.MazeConfig;
+import maze.SelectCharView;
 
 public class CreateMazeController {
 	CreateMazeView cmView=null;
@@ -25,8 +27,8 @@ public class CreateMazeController {
 
 	private void addListeners() {
 		// TODO Auto-generated method stub
-		for(int i=0;i<cmView.mazeDim;i++){
-			for(int j=0;j<cmView.mazeDim;j++){
+		for(int i=0;i<cmView.mazeDimY;i++){
+			for(int j=0;j<cmView.mazeDimX;j++){
 				JPanel jp=cmView.panels[i][j];
 				jp.addMouseListener(panelClicked);
 			}
