@@ -102,9 +102,9 @@ frame.setSize(1000,1000);
 		cl.setName("cl");
 		elements.add(cl);
 		
-//		ca=new JButton(new ImageIcon(calcium));
-//		ca.setName("ca");
-//		elements.add(ca);
+		ca=new JButton(new ImageIcon(calcium));
+		ca.setName("ca");
+		elements.add(ca);
 		
 		o=new JButton(new ImageIcon(oxygen));
 		o.setName("o");
